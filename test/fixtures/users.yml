@@ -2,8 +2,14 @@ admin:
   name: admin
   email: pigaru.gooood.mar19@gmail.com
   password_digest: <%= User.digest('adminadmin') %>
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
   
 niinami:
   name: niinami homare
   email: niinami@gmail.com
   password_digest: <%= User.digest('adminadmin') %>
+  admin: true
+  activated: true
+  activated_at: <%= Time.zone.now %>
